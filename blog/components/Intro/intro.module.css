@@ -1,35 +1,22 @@
 .person {
-    user-select: none;
-    width: 100vw;
-    height: 22vw;
+    height: 18vw;
     position: relative;
 }
 
-.person img {
-    position: absolute;
-    left:50%;
-    top:20px;
-    transform: translate(-50%);
-    width: 60vw;
-    height: 20vw;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px grey;
-}
 .name {
     position: absolute;
     left:50%;
-    top: 7vw;
+    top: 4.5vw;
     transform: translate(-50%);
     font-family: 'KaTeX_Main','Times New Roman',serif;
-    font-size: 2.5em;
+    font-size: 5em;
     font-weight: 400;
     color: white;
 }
 .motto {
     position: absolute;
-    position: absolute;
     left:50%;
-    top: 11vw;
+    top: 8.5vw;
     transform: translate(-50%);
     font-family: 'KaTeX_Main','Times New Roman',serif;
     font-size: 1.2em;

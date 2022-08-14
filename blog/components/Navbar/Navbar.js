@@ -13,6 +13,7 @@ import axios from 'axios';
 import Navmenu from './Navmenu.js';
 import servicePath from '../../config/apiURL';
 import '../../node_modules/antd/dist/antd.css';
+import './navbar.module.css'
 
 function getItem(label, key, icon, children, type) {
   return {
@@ -54,11 +55,7 @@ const Navbar = () => {
     }
   );
   return (
-    <div
-      style={{
-        width: 256,
-      }}
-    >
+    <div className='content'>
       <Button
         type="primary"
         onClick={toggleCollapsed}

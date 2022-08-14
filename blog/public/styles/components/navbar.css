@@ -5,12 +5,11 @@
 }
 
 .header .header-logo {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 2rem;
+
     color: #1890ff;
 }
 
 .header .header-text {
     padding-left: 0.5rem;
-    font-size: 0.3rem;
+    font-size: 0.1rem;
 }

@@ -1,13 +1,6 @@
-.bread-div {
-    padding: .5rem;
-    border-bottom: 1px solid #eee;
-    background-color: #e1f0ff;
-}
-
 .detailed-title {
     font-size: 1.8rem;
     text-align: center;
-    padding: 1rem;
 }
 
 .center {
@@ -15,8 +8,10 @@
 }
 
 .detailed-content {
+    font-family: "Mircosoft YaHei";
     padding: 1.3rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    line-height: 2rem;
 }
 
 pre {

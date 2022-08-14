@@ -1,12 +1,9 @@
 import React from 'react'
+import '../node_modules/antd/dist/antd.css'
 import 'normalize.css/normalize.css'
 import '../public/styles/global.css'
 import '../public/styles/detailed.css'
-// import '../public/styles/index.css'
-import '../public/styles/components/header.css'
-import '../public/styles/components/author.css'
-import '../public/styles/components/advert.css'
-import '../public/styles/components/footer.css'
+import '../public/styles/components/navbar.css'
 import { formatCountdown } from 'antd/lib/statistic/utils'
 
 

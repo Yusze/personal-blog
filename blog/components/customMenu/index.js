@@ -5,9 +5,8 @@ import servicePath from '../../config/apiURL'
 import '../../node_modules/antd/dist/antd.css'
 import { Row, Col, Menu } from 'antd'
 import { HomeOutlined,  HeartOutlined } from '@ant-design/icons'
-// import style from './index.module.css'
 
-function Header() {
+function CustomMenu() {
     const [navArray, setNavArray] = useState([])
     useEffect(() => {
         const fetchData = async () => {
@@ -20,6 +19,7 @@ function Header() {
                     return res.data.data
                 }
             )
+            console.log(result);
             setNavArray(result)
         }
         fetchData()
@@ -28,20 +28,20 @@ function Header() {
     
     const handleClick = (e) => {
         if (e.key == 0)
-        {
+        {   
+            console.log(e.key)
             Router.push('/') // 对应地址是/ 而不是index
         } else {
+            console.log(e);
+            console.log('/list?id=' + e.key);
             Router.push('/list?id=' + e.key)
         }
     }
     return (
         <div className='header'>
             <Row type='flex' justify='center'>
-                {/* <Col xs={24} sm={24} md={8} lg={15} xl={ 10}>
-                    <span className='header-logo'>YuSze</span>
-                </Col> */}
                 <Col xs={0} sm={0} md={16} lg={16} xl={16}>
-                    <Menu mode='horizontal' onClick={ handleClick}>
+                    <Menu className="navbar" mode='horizontal' onClick={handleClick} style={{justifyContent:"center"}}>
                         <Menu.Item key="0">
                             <HomeOutlined/>
                             &nbsp;Home
@@ -49,7 +49,7 @@ function Header() {
                         {
                             navArray.map((item) => {
                                 return (
-                                    <Menu.Item key={item.id}>
+                                    <Menu.Item key={item.Id}>
                                         <HeartOutlined />
                                         &nbsp;{ item.typeName}
                                     </Menu.Item>
@@ -63,4 +63,4 @@ function Header() {
     )
 }
 
-export default Header
+export default CustomMenu
